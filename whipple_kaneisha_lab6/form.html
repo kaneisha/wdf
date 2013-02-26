@@ -1,1 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<h1>Music Load Survey</h1>
+			<p>Below is a short survey that is based upon your experience as a customer here at Music Load. In order to be placed in the drawing for a free cd you must answer all the questions below. Thank you for your participation.</p>
+	<form>
+		Email: <input type="text" name="email">
+		<p>What is your gender?</p>
+			<input type="radio" name="gender" value="Male">Male<br>
+			<input type="radio" name="gender" value="female">Female
+		<p>How often do you come to Music Load?</p>
+			<select>
+				<option value="daily">Daily</option>
+				<option value="weekly">Weekly</option>
+				<option value="monthly">Monthly</option>
+				<option value="year">Once a year</option>
+			</select>
+		<p>What type of music do you listen to? (Check all that apply)</p>
+			<input type="checkbox" name="music" value="rap/hip-hop">Rap/Hip-Hop<br>
+			<input type="checkbox" name="music" value="country">Country<br>
+			<input type="checkbox" name="music" value="pop">Pop<br>
+			<input type="checkbox" name="music" value="r&amp;b">R&amp;B<br>
+			<input type="checkbox" name="music" value="electronic">Electronic<br>
+			<input type="checkbox" name="music" value="rock">Rock<br>
+			<input type="checkbox" name="music" value="other">Other
+		<h2>Customer Experience</h2>
+			<p>How would you rate your experience at Music Load?</p>
+				<input type="radio" name="experience" value="excellent">Excellent<br> 
+				<input type="radio" name="experience" value="good">Good<br>
+				<input type="radio" name="experience" value="Horrible">Horrible
+			<p>If you had any issues were they resolved?</p>
+				<input type="radio" name="issues" value="yes">Yes<br>
+				<input type="radio" name="issues" value="no">No
+		<h3>Comments</h3>
+			<p>Do you have any questions, comments, or concerns in regards to anything Music Load?</p>
+				<textarea rows="4" cols="50"></textarea>
+			<br><input type="submit" value="Submit">
+	</form>
+	</body>
+</html>
