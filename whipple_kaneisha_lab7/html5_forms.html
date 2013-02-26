@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML5 Form</title>
+	</head>
+	<body>
+		<h1>Music Load</h1>
+			<p>Sign up to become a member of Music Load's exclusive V.I.P group!</p>
+				<p>Name: <input type="text" name="name" autofocus="autofocus"></p>
+				Email:<input type="email" name="email_address" />
+				<p>Phone (used for when your orders arrive):<input type="tel" name="phone" /></p>
+				<p>What is the best time to contact you?
+					<input type="time" name="call_time" /></p>
+				<p>What is the best way to reach you?</p>
+				<input list="mydata" />
+				<datalist id="mydata">
+					<option value="By Phone" value"phone">
+					<option value="By Email" value"email">
+					<option value="By Text" value"text">
+				</datalist>
+				<p>Date of birth:
+					<input type="date" name="birthday" /></p>
+				<p>What is your pants size?
+				<input type="number" name="size" /></p>
+				<p>Favorite color to wear
+				<input type="color" name="color_choice" /></p>
+				<p>Amount of orders you've made already
+				<input type="range" name="amount" /></p>
+				<p>You are 80% done with this form.</p><progress value="80" max="100">80%</progress> 
+				<p>Search for your favorite styles:<input type="search" name="search_site" placeholder="Search Music Load" /></p>
+				<p>Enter your website's URL<input type="url" name="website" /></p>
+				<p>Enter a password <input type="text" required="required" /></p>
+				
+				
