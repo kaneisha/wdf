@@ -4,16 +4,18 @@
 		<meta charset="utf-8" />
 		<title>Forms</title>
 	</head>
-	<body>
+	<body id="body">
 		<h1>Music Load Survey</h1>
 			<p>Below is a short survey that is based upon your experience as a customer here at Music Load. In order to be placed in the drawing for a free cd you must answer all the questions below. Thank you for your participation.</p>
 	<form>
-		Email: <input type="text" name="email">
-		<p>What is your gender?</p>
-			<input type="radio" name="gender" value="Male">Male<br>
-			<input type="radio" name="gender" value="female">Female
-		<p>How often do you come to Music Load?</p>
-			<select>
+		<label for="email">Email: <input type="text" name="email" id="email"></label>
+	<fieldset>
+		<legend>What is your gender?</legend>
+			<label for="male"><input type="radio" name="gender" value="Male" id="male">Male<br></label>
+			<label for="female"><input type="radio" name="gender" value="female" id="female">Female</label>
+	</fieldset>
+			<label for="visit">How often do you come to Music Load?</label>
+			<select id="visit">
 				<option value="daily">Daily</option>
 				<option value="weekly">Weekly</option>
 				<option value="monthly">Monthly</option>
@@ -21,26 +23,28 @@
 			</select>
 	<fieldset>
 		<legend>Music Choice</legend>
-		<label>What type of music do you listen to? (Check all that apply)</label>
-			<input type="checkbox" name="music" value="rap/hip-hop">Rap/Hip-Hop<br>
-			<input type="checkbox" name="music" value="country">Country<br>
-			<input type="checkbox" name="music" value="pop">Pop<br>
-			<input type="checkbox" name="music" value="r&amp;b">R&amp;B<br>
-			<input type="checkbox" name="music" value="electronic">Electronic<br>
-			<input type="checkbox" name="music" value="rock">Rock<br>
-			<input type="checkbox" name="music" value="other">Other
+		<p>What type of music do you listen to? (Check all that apply)</p>
+			<label for="music"><input type="checkbox" name="music" value="rap/hip-hop" id="music">Rap/Hip-Hop<br></label>
+			<label for="country"><input type="checkbox" name="music" value="country" id="country">Country<br></label>
+			<label for="pop"><input type="checkbox" name="music" value="pop" id="pop">Pop<br></label>
+			<label for="r&amp;b"><input type="checkbox" name="music" value="r&amp;b" id="r&amp;b">R&amp;B<br></label>
+			<label for="electronic"><input type="checkbox" name="music" value="electronic" id="electronic">Electronic<br></label>
+			<label for="rock"><input type="checkbox" name="music" value="rock" id="rock">Rock<br></label>
+			<label for="other"><input type="checkbox" name="music" value="other" id="other">Other</label>
 	</fieldset>
+	<fieldset>
 		<h2>Customer Experience</h2>
 			<label>How would you rate your experience at Music Load?</label>
-				<input type="radio" name="experience" value="excellent">Excellent<br> 
-				<input type="radio" name="experience" value="good">Good<br>
-				<input type="radio" name="experience" value="Horrible">Horrible
+				<label for="excellent"><input type="radio" name="experience" value="excellent" id="excellent">Excellent</label><br> 
+				<label for="good"><input type="radio" name="experience" value="good" id="good">Good<br>
+				<label for="horrible"><input type="radio" name="experience" value="Horrible" id="horrible">Horrible
 			<p>If you had any issues were they resolved?</p>
-				<input type="radio" name="issues" value="yes">Yes<br>
-				<input type="radio" name="issues" value="no">No
+				<label for="yes"><input type="radio" name="issues" value="yes" id="yes">Yes<br>
+				<label for="no"><input type="radio" name="issues" value="no" id="no">No
+	</fieldset>
 		<h3>Comments</h3>
-			<label>Do you have any questions, comments, or concerns in regards to anything Music Load?</label>
-				<textarea rows="4" cols="50"></textarea>
+			<label for="comment">Do you have any questions, comments, or concerns in regards to anything Music Load?</label>
+				<textarea rows="4" cols="50" id="comment"></textarea>
 			<br><input type="submit" value="Submit" title="This is where you submit your form">
 	</form>
 	</body>
